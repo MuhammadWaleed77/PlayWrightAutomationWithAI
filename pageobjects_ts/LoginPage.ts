@@ -18,7 +18,7 @@ constructor(page:Page)
 
 async goTo()
 {
-    await this.page.goto("https://rahulshettyacademy.com/client");
+    await this.page.goto("https://google.com");
 }
 
 async validLogin(username:string,password:string)

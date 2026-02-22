@@ -19,7 +19,7 @@ test('@SP Place the order', async ({ page }) => {
 
     window.localStorage.setItem('token', value);
   }, response.token);
-  await page.goto("https://rahulshettyacademy.com/client");
+  await page.goto("https://google.com");
 
 
   await page.route("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*",

@@ -7,7 +7,7 @@ let webContext;
 test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
-    await page.goto("https://rahulshettyacademy.com/client");
+    await page.goto("https://google.com");
     await page.locator("#userEmail").fill("rahulshetty@gmail.com");
     await page.locator("#userPassword").fill("Iamking@000");
     await page.locator("[value='Login']").click();
@@ -25,7 +25,7 @@ test('@QA Client App login', async () => {
     const email = "rahulshetty@gmail.com";
     const productName = 'iphone 13 pro';
     const page = await webContext.newPage();
-    await page.goto("https://rahulshettyacademy.com/client");
+    await page.goto("https://google.com");
     const products = page.locator(".card-body");
     const titles = await page.locator(".card-body b").allTextContents();
     console.log(titles);

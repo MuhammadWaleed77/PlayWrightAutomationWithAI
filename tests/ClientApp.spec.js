@@ -8,7 +8,7 @@ test('@Webst Client App login', async ({ page }) => {
    const email = "anshika@gmail.com";
    const productName = 'ZARA COAT 3';
    const products = page.locator(".card-body");
-   await page.goto("https://rahulshettyacademy.com/client");
+   await page.goto("https://google.com");
    await page.locator("#userEmail").fill(email);
    await page.locator("#userPassword").fill("Iamking@000");
    await page.locator("[value='Login']").click();

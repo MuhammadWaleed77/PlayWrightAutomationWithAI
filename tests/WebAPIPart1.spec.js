@@ -21,7 +21,7 @@ test('@API Place the order', async ({page})=>
 
         window.localStorage.setItem('token',value);
     }, response.token );
-await page.goto("https://rahulshettyacademy.com/client");
+await page.goto("https://google.com");
  await page.locator("button[routerlink*='myorders']").click();
  await page.locator("tbody").waitFor();
 const rows = await page.locator("tbody tr");

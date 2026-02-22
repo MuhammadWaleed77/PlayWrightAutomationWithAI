@@ -8,7 +8,7 @@ test("Calendar validations",async({page})=>
     const date = "15";
     const year = "2027";
     const expectedList = [monthNumber,date,year];
-    await page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers");
+    await page.goto("https:google");
     await page.locator(".react-date-picker__inputGroup").click();
     await page.locator(".react-calendar__navigation__label").click();
     await page.locator(".react-calendar__navigation__label").click();
